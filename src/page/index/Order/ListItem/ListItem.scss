@@ -27,14 +27,55 @@
   .order-name {
     font-size: 0.426667rem;
     width: 4.8rem;
+    height: 0.426667rem;
     font-weight: bold;
   }
   .arrow {
-    width: 8px;
-    height: 8px;
+    width: 0.213333rem;
+    height: 0.213333rem;
     border: 1px solid #999;
     border-width: 1px 1px 0 0;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+  }
+  .order-state {
+    margin-left: 1.066667rem;
+    font-size: 0.373333rem;
+    color: #999;
+  }
+  .product-item {
+    font-size: 0.373333rem;
+    color: #666;
+    margin-top: 0.32rem;
+  }
+  .p-count {
+    float: right;
+    margin-right: 0.4rem;
+  }
+
+  .p-total-count {
+    float: right;
+    margin-right: 0.4rem;
+    font-size: 0.32rem;
+  }
+  .total-price {
+    font-size: 0.373333rem;
+    color: #151515;
+    margin-left: 0.053333rem;
+    letter-spacing: 1px;
+  }
+  .evaluation{
+    padding: .266667rem 0;
+  }
+  .evaluation-btn{
+    float: right;
+    width: 2.666667rem;
+    height: .853333rem;
+    color: #6b450a;
+    background-color: #ffd161;
+    font-size: .373333rem;
+    line-height: .853333rem;
+    text-align: center;
+    margin-right: .373333rem;
   }
 }

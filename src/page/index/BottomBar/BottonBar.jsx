@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
 import { changeTab } from '../actions/tabAction';
 import './BottomBar';
@@ -15,8 +16,17 @@ class BottomBar extends React.Component {
     super(props);
   }
 
+  changePropsTab(item) {
+    this.props.history.push(item.key);
+    this.props.dispatch(
+      changeTab({
+        activeKey: item.key
+      })
+    );
+  }
+
   _renderItems() {
-    let { tabs, activeKey, changePropsTab } = this.props;
+    let { tabs, activeKey } = this.props;
 
     return tabs.map(item => {
       let cls = item.key + ' btn-item';
@@ -24,11 +34,11 @@ class BottomBar extends React.Component {
         cls += ' active';
       }
       return (
+        // <Link className={cls} to={item.key} key={item.key}>{item.name}</Link>
         <div
           key={item.key}
           className={cls}
-          onClick={() => changePropsTab(item)}
-        >
+          onClick={() => this.changePropsTab(item)}>
           <div className="tab-icon" />
           <div className="btn-name">{item.name}</div>
         </div>
@@ -45,17 +55,5 @@ const mapStateToProps = state => ({
   tabs: state.tabReducer.tabs,
   activeKey: state.tabReducer.activeKey
 });
-const mapDispatchToProps = dispatch => ({
-  changePropsTab(item) {
-    dispatch(
-      changeTab({
-        activeKey: item.key
-      })
-    );
-  }
-});
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(BottomBar);
+export default withRouter(connect(mapStateToProps)(BottomBar));
