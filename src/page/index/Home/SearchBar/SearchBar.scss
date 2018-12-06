@@ -1,0 +1,70 @@
+.search-bar {
+  width: 100%;
+  position: absolute;
+  height: 1.066667rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.373333rem;
+  font-size: 0.373333rem;
+  .bar-location {
+    margin-right: 0.533333rem;
+    border-radius: 0.346667rem;
+    background-color: rgba(0, 0, 0, 0.33);
+    height: 0.746667rem;
+    line-height: 0.746667rem;
+    width: 2.453333rem;
+  }
+  .location-icon {
+    display: inline-block;
+    width: 0.4rem;
+    height: 20px;
+    vertical-align: 0.213333rem;
+    margin-left: 8px;
+    background-image: url(./img/locationIcon.png);
+    background-size: cover;
+  }
+  .location-text {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    vertical-align: 0.32rem;
+    margin-left: 0.213333rem;
+    margin-right: 0.506667rem;
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0.186667rem;
+      width: 14px;
+      height: 14px;
+      background-image: url(./img/arrowIcon.png);
+      background-size: cover;
+    }
+  }
+  .search-btn {
+    position: relative;
+    width: 4.533333rem;
+    height: 0.8rem;
+    background-color: #fff;
+    border-radius: 0.533333rem;
+    &:before{
+      content: "";
+      display: inline-block;
+      margin: 0 .266667rem;
+      vertical-align: middle;
+      width: 14px;
+      height: 14px;
+      background-image: url(./img/searchIcon.png);
+      background-size: cover;
+    }
+}
+  .place-holder{
+    display: inline-block;
+    vertical-align: middle;
+    color: #a9a9a9;
+    font-size: .373333rem;
+    height: 100%;
+    line-height: .8rem;
+  }
+}

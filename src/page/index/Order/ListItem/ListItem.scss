@@ -1,0 +1,40 @@
+.order-item {
+  border-top: 0.346667rem solid #efefef;
+  .order-item-inner {
+    display: flex;
+    padding-bottom: 0.48rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .item-img {
+    width: 1.066667rem;
+    height: 1.066667rem;
+    margin-top: 0.213333rem;
+    margin-left: 0.426667rem;
+    border-radius: 50%;
+  }
+  .item-right {
+    flex: 1;
+    margin-left: 0.4rem;
+  }
+  .item-top {
+    height: 1.466667rem;
+    padding-top: 0.053333rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .order-name {
+    font-size: 0.426667rem;
+    width: 4.8rem;
+    font-weight: bold;
+  }
+  .arrow {
+    width: 8px;
+    height: 8px;
+    border: 1px solid #999;
+    border-width: 1px 1px 0 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}

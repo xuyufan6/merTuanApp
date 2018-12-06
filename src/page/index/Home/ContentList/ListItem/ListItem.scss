@@ -1,0 +1,111 @@
+.item-content {
+  display: flex;
+  padding: 0.4rem 0;
+  margin: 0 0.266667rem;
+  color: #656565;
+  &:after {
+    background-color: #e4e4e4;
+  }
+  .item-img {
+    width: 2.293333rem;
+    height: 1.733333rem;
+    border: 1px solid #e4e4e4;
+  }
+  .brand {
+    position: absolute;
+    left: 0.026667rem;
+    top: 0.426667rem;
+    font-size: 0.32rem;
+    padding: 0.053333rem;
+    color: #fff;
+  }
+  .brand-pin {
+    background-color: #ffa627;
+  }
+  .brand-xin {
+    background-color: #21c56c;
+  }
+  .item-info-content {
+    flex: 1;
+    margin-left: 0.186667rem;
+  }
+  .item-title {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    margin-top: 0.08rem;
+  }
+  .item-desc {
+    margin-top: 0.346667rem;
+    font-size: 0.32rem;
+  }
+  .item-score {
+    float: left;
+  }
+  .star {
+    width: 0.266667rem;
+    height: 0.266667rem;
+    float: left;
+  }
+
+  .fullstar {
+    background-image: url(./img/fullstar.png);
+    background-size: cover;
+  }
+  .halfstar {
+    background-image: url(./img/halfstar.png);
+    background-size: cover;
+  }
+  .nullstar {
+    background-image: url(./img/gray-star.png);
+    background-size: cover;
+  }
+
+  .item-count {
+    float: left;
+    margin-left: 0.133333rem;
+  }
+  .item-time {
+    float: right;
+  }
+  .item-distance {
+    float: right;
+  }
+  .item-price {
+    margin-top: 0.266667rem;
+    font-size: 0.32rem;
+    height: 0.64rem;
+  }
+  .item-pre-price {
+    float: left;
+  }
+
+  .item-meituan-flag {
+    float: right;
+    background-color: #ffd161;
+    color: #000;
+    padding: 0.08rem;
+    border-radius: 0.08rem;
+
+  }
+
+  .other-info{
+    color: #898989;
+    margin-top: .186667rem;
+    font-size: .32rem;
+  }
+
+  .other-tag{
+    width: .373333rem;
+    height: .373333rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .other-content{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: .133333rem;
+    line-height: .373333rem;
+    width: 6.133333rem;
+  }
+}

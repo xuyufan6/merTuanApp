@@ -1,0 +1,27 @@
+@function px2rem($px) {
+  $rem: 37.5px;
+  @return ($px / $rem) + rem;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.scale-1px {
+  position: relative;
+  border: none;
+
+  &:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+    -webkit-transform-origin: 0, 0;
+    transform-origin: 0, 0;
+  }
+}
